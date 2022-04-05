@@ -1,3 +1,13 @@
+# SOEN357 Project - Focus Timer
+
+
+## Team Members
+
+| Name                 | Student ID | GitHub Name      |
+| -------------------- | ---------- | ---------------- |
+| Allan Paul Lopez     | 40000954   | [allanation](https://github.com/allanation)       | 
+| Joshua Leopardi      | 40121787   | [JoshLeopardi](https://github.com/JoshLeopardi)   |
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
