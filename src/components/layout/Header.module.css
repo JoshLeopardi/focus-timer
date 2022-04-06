@@ -1,0 +1,13 @@
+.header {
+  background-color: var(--primary);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  height: 110px;
+  padding-bottom: 20px;
+}
+
+.headerTitle {
+  margin: 0;
+}
