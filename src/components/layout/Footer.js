@@ -1,8 +1,8 @@
 import classes from "./Footer.module.css";
-import HomeOutlinedIcon from "@mui/icons-material/HomeOutlined";
 import ChatBubbleOutlineOutlinedIcon from "@mui/icons-material/ChatBubbleOutlineOutlined";
 import FmdGoodOutlinedIcon from "@mui/icons-material/FmdGoodOutlined";
 import AccountCircleOutlinedIcon from "@mui/icons-material/AccountCircleOutlined";
+import HomeIcon from "@mui/icons-material/Home";
 import { Link } from "react-router-dom";
 function Footer() {
   return (
@@ -10,7 +10,8 @@ function Footer() {
       <ul>
         <Link to="/">
           <li className={classes.footerbtn}>
-            <HomeOutlinedIcon />
+            <HomeIcon />
+            what
           </li>
         </Link>
 

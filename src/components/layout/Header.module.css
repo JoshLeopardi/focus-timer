@@ -1,6 +1,10 @@
 .header {
   background-color: var(--primary);
   color: white;
+  position: sticky;
+  top: 0;
+  right: 0;
+  left: 0;
   display: flex;
   justify-content: center;
   align-items: flex-end;
@@ -10,4 +14,5 @@
 
 .headerTitle {
   margin: 0;
+  font-size: 32px;
 }

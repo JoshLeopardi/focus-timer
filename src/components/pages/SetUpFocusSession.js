@@ -3,7 +3,13 @@ import TextField from "@mui/material/TextField";
 import MenuItem from "@mui/material/MenuItem";
 import { toBePartiallyChecked } from "@testing-library/jest-dom/dist/matchers";
 import React from "react";
-
+import fclasses from "../layout/Footer.module.css";
+import Header from "../layout/Header";
+import { Link } from "react-router-dom";
+import HomeIcon from "@mui/icons-material/Home";
+import ChatBubbleOutlineOutlinedIcon from "@mui/icons-material/ChatBubbleOutlineOutlined";
+import FmdGoodOutlinedIcon from "@mui/icons-material/FmdGoodOutlined";
+import AccountCircleOutlinedIcon from "@mui/icons-material/AccountCircleOutlined";
 const courses = [
   {
     value: "342",
@@ -32,6 +38,7 @@ export default function SetUpFocusTimer() {
 
   return (
     <div>
+      <Header>Sparky's Room</Header>
       <div className={classes.topSetUp}>
         <h1>FOCUS</h1>
         <h1>BREAK</h1>
@@ -100,6 +107,31 @@ export default function SetUpFocusTimer() {
       <div className={classes.bottomButtons}>
         <p className={classes.bottomButton}>Invite Friend</p>
         <p className={classes.bottomButton}>Start</p>
+      </div>
+      <div className={fclasses.footer}>
+        <ul>
+          <Link to="/">
+            <li className={fclasses.footerbtn}>
+              <HomeIcon fontSize="large" />
+            </li>
+          </Link>
+
+          <Link to="/customersupport">
+            <li className={fclasses.footerbtn}>
+              <ChatBubbleOutlineOutlinedIcon />
+            </li>
+          </Link>
+          <Link to="/tracking">
+            <li className={fclasses.footerbtn}>
+              <FmdGoodOutlinedIcon />
+            </li>
+          </Link>
+          <Link to="/profile">
+            <li className={fclasses.footerbtn}>
+              <AccountCircleOutlinedIcon />
+            </li>
+          </Link>
+        </ul>
       </div>
     </div>
   );
