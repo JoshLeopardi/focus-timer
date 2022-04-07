@@ -6,10 +6,10 @@ import React from "react";
 import fclasses from "../layout/Footer.module.css";
 import Header from "../layout/Header";
 import { Link } from "react-router-dom";
-import HomeIcon from "@mui/icons-material/Home";
-import ChatBubbleOutlineOutlinedIcon from "@mui/icons-material/ChatBubbleOutlineOutlined";
-import FmdGoodOutlinedIcon from "@mui/icons-material/FmdGoodOutlined";
-import AccountCircleOutlinedIcon from "@mui/icons-material/AccountCircleOutlined";
+import HomeOutlinedIcon from "@mui/icons-material/HomeOutlined";
+import ViewListOutlinedIcon from "@mui/icons-material/ViewListOutlined";
+import AssessmentOutlinedIcon from "@mui/icons-material/AssessmentOutlined";
+import MoreHorizOutlinedIcon from "@mui/icons-material/MoreHorizOutlined";
 const courses = [
   {
     value: "342",
@@ -112,23 +112,23 @@ export default function SetUpFocusTimer() {
         <ul>
           <Link to="/">
             <li className={fclasses.footerbtn}>
-              <HomeIcon fontSize="large" />
+              <HomeOutlinedIcon fontSize="large" />
             </li>
           </Link>
 
           <Link to="/customersupport">
             <li className={fclasses.footerbtn}>
-              <ChatBubbleOutlineOutlinedIcon />
+              <ViewListOutlinedIcon fontSize="large" />
             </li>
           </Link>
           <Link to="/tracking">
             <li className={fclasses.footerbtn}>
-              <FmdGoodOutlinedIcon />
+              <AssessmentOutlinedIcon fontSize="large" />
             </li>
           </Link>
           <Link to="/profile">
             <li className={fclasses.footerbtn}>
-              <AccountCircleOutlinedIcon />
+              <MoreHorizOutlinedIcon fontSize="large" />
             </li>
           </Link>
         </ul>
