@@ -7,6 +7,7 @@ import HomeIcon from "@mui/icons-material/Home";
 import ViewListOutlinedIcon from "@mui/icons-material/ViewListOutlined";
 import AssessmentOutlinedIcon from "@mui/icons-material/AssessmentOutlined";
 import MoreHorizOutlinedIcon from "@mui/icons-material/MoreHorizOutlined";
+import DaysCircle from "../layout/DaysCircle";
 export default function Home() {
   return (
     <div>
@@ -14,13 +15,7 @@ export default function Home() {
       <div className={classes.homeBox}>
         <div className={classes.scheduleTitle}>MINUTES FOCUSED THIS WEEK</div>
         <div className={classes.circleComponent1}>
-          <Circle>S</Circle>
-          <Circle>M</Circle>
-          <Circle>T</Circle>
-          <Circle>W</Circle>
-          <Circle>T</Circle>
-          <Circle>F</Circle>
-          <Circle>S</Circle>
+          <DaysCircle />
         </div>
         <div className={classes.circleComponent2}>
           <Circle>90</Circle>

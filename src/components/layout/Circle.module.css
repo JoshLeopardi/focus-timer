@@ -11,3 +11,15 @@
 .insidecircle {
   text-align: center;
 }
+
+.todaysDay {
+  color: white;
+  background-color: var(--primary);
+  border-radius: 100000px;
+}
+
+.todaysCircles {
+  display: flex;
+  justify-content: center;
+  gap: 2px;
+}
