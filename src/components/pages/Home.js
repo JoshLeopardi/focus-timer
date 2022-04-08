@@ -11,10 +11,30 @@ export default function Home() {
   return (
     <div>
       <Header>Sparky's Room</Header>
-      <div>
-        <div classame={classes.scheduletitle}>MINUTES FOCUSED THIS WEEK</div>
+      <div className={classes.homeBox}>
+        <div className={classes.scheduleTitle}>MINUTES FOCUSED THIS WEEK</div>
+        <div className={classes.circleComponent1}>
+          <Circle>S</Circle>
+          <Circle>M</Circle>
+          <Circle>T</Circle>
+          <Circle>W</Circle>
+          <Circle>T</Circle>
+          <Circle>F</Circle>
+          <Circle>S</Circle>
+        </div>
+        <div className={classes.circleComponent2}>
+          <Circle>90</Circle>
+          <Circle>150</Circle>
+          <Circle>180</Circle>
+          <Circle>60</Circle>
+          <Circle>0</Circle>
+          <Circle>0</Circle>
+          <Circle>0</Circle>
+        </div>
       </div>
-
+      <div className={classes.bottomButtons}>
+        <p className={classes.bottomButton}>Start Focus</p>
+      </div>
       <div className={fclasses.footer}>
         <ul>
           <Link to="/">

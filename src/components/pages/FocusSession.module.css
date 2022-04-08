@@ -9,7 +9,7 @@
   width: 100%;
   margin-bottom: 15px;
   font-size: 30px;
-  margin-top: -30px;
+  margin-top: -40px;
   margin-left: -10px;
 }
 
@@ -20,9 +20,9 @@
 }
 
 .pausecircleIcon {
-  font-size: 55px;
+  font-size: 60px;
 }
 
 .stopcircleIcon {
-  font-size: 55px;
+  font-size: 60px;
 }
