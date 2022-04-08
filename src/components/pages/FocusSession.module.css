@@ -19,10 +19,10 @@
   margin-top: 400px;
 }
 
-.pausecircleIcon {
-  font-size: 60px;
+.pausecircleIcon path {
+  color: blue;
 }
 
-.stopcircleIcon {
-  font-size: 60px;
+.stopcircleIcon path {
+  color: blue;
 }
