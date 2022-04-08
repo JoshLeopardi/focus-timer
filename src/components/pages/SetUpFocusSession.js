@@ -38,7 +38,7 @@ export default function SetUpFocusTimer() {
 
   return (
     <div>
-      <Header>Sparky's Room</Header>
+      <Header>Set-Up Focus Session</Header>
       <div className={classes.topSetUp}>
         <h1>FOCUS</h1>
         <h1>BREAK</h1>
