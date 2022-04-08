@@ -11,42 +11,10 @@ export default function Home() {
   return (
     <div>
       <Header>Sparky's Room</Header>
-      <div classame={classes.homebox}>
-        MINUTES FOCUSED THIS WEEK
-        <Circle>S</Circle>
-        <Circle>S</Circle>
-        <Circle>S</Circle>
-        <Circle>S</Circle>
-        <Circle>S</Circle>
-        <Circle>S</Circle>
-        <Circle>S</Circle>
-        <Circle>S</Circle>
-        <Circle>S</Circle>
-        <Circle>S</Circle>
-        <Circle>S</Circle>
-        <Circle>S</Circle>
-        <Circle>S</Circle>
-        <Circle>S</Circle>
-        <Circle>S</Circle>
-        <Circle>S</Circle>
-        <Circle>S</Circle>
-        <Circle>S</Circle>
-        <Circle>S</Circle>
-        <Circle>S</Circle>
-        <Circle>S</Circle>
-        <Circle>S</Circle>
-        <Circle>S</Circle>
-        <Circle>S</Circle>
-        <Circle>S</Circle>
-        <Circle>S</Circle>
-        <Circle>S</Circle>
-        <Circle>S</Circle>
-        <Circle>S</Circle>
-        <Circle>S</Circle>
-        <Circle>S</Circle>
-        <Circle>S</Circle>
-        <Circle>S</Circle>
+      <div>
+        <div classame={classes.scheduletitle}>MINUTES FOCUSED THIS WEEK</div>
       </div>
+
       <div className={fclasses.footer}>
         <ul>
           <Link to="/">

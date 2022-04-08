@@ -1,4 +1,9 @@
 .homebox {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
+}
+
+.scheduletitle {
+  text-align: center;
+  margin-left: 50px;
 }
