@@ -106,7 +106,9 @@ export default function SetUpFocusTimer() {
       </div>
       <div className={classes.bottomButtons}>
         <p className={classes.bottomButton}>Invite Friend</p>
-        <p className={classes.bottomButton}>Start</p>
+        <Link to="/FocusSession">
+          <p className={classes.bottomButton}>Start</p>
+        </Link>
       </div>
       <div className={fclasses.footer}>
         <ul>

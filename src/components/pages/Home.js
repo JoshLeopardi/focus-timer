@@ -28,7 +28,9 @@ export default function Home() {
         </div>
       </div>
       <div className={classes.bottomButtons}>
-        <p className={classes.bottomButton}>Start Focus</p>
+        <Link to="/SetUpFocusSession">
+          <p className={classes.bottomButton}>Start Focus</p>
+        </Link>
       </div>
       <div className={fclasses.footer}>
         <ul>
@@ -38,17 +40,17 @@ export default function Home() {
             </li>
           </Link>
 
-          <Link to="/customersupport">
+          <Link to="/ToDoList">
             <li className={fclasses.footerbtn}>
               <ViewListOutlinedIcon fontSize="large" />
             </li>
           </Link>
-          <Link to="/tracking">
+          <Link to="/Statistics">
             <li className={fclasses.footerbtn}>
               <AssessmentOutlinedIcon fontSize="large" />
             </li>
           </Link>
-          <Link to="/profile">
+          <Link to="/Settings">
             <li className={fclasses.footerbtn}>
               <MoreHorizOutlinedIcon fontSize="large" />
             </li>
