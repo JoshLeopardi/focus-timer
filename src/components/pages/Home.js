@@ -10,6 +10,7 @@ import MoreHorizOutlinedIcon from "@mui/icons-material/MoreHorizOutlined";
 import DaysCircle from "../layout/DaysCircle";
 import SparkyIdle from "../Images/Sparky_Ide.gif";
 import SparkyRoom from "../Images/Sparky_Room.gif";
+import StarsOutlinedIcon from "@mui/icons-material/StarsOutlined";
 export default function Home() {
   let navigate = useNavigate();
   const goToSetUp = () => {
@@ -55,7 +56,10 @@ export default function Home() {
           alt="Sparky_Idle"
         />
       </div>
-      <div className={classes.points}>1200 Foucey</div>
+      <div className={classes.focey}>
+        <StarsOutlinedIcon className={classes.starLogo} />
+        <p className={classes.points}>12000 Focey</p>
+      </div>
       <div className={classes.sparkyRoom1}>
         <img
           className={classes.sparkyRoom2}

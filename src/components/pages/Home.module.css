@@ -20,21 +20,22 @@
   justify-content: center;
   margin-top: 70px;
   font-weight: 550;
-  gap: 2px;
+  gap: 4px;
 }
+
 .circleComponent2 {
   display: flex;
   justify-content: center;
   margin-top: 10px;
   margin-bottom: 20px;
   font-weight: 550;
-  gap: 2px;
+  gap: 4px;
 }
 
 .bottomButtons {
   display: flex;
   justify-content: center;
-  margin-top: 340px;
+  margin-top: 320px;
 }
 
 .bottomButton {
@@ -63,7 +64,8 @@
 
 .sparkyIdle2 {
   width: 80%;
-  margin-left: -120px;
+  margin-left: -100px;
+  margin-top: 10px;
 }
 
 .sparkyRoom1 {
@@ -77,17 +79,31 @@
   overflow: hidden;
   border: 1px solid black;
   position: fixed;
+  margin-top: 10px;
 }
 
 .sparkyRoom2 {
   margin: 0 50px 0 0;
 }
 
+.focey {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  position: fixed;
+  margin-left: 55px;
+  margin-top: 10px;
+}
+
 .points {
   color: white;
-  font-size: large;
+  font-weight: 500;
+  font-size: 20px;
   z-index: 1000000;
-  transform: translate(50px, 50px);
-  position: fixed;
-  margin-top: -30px;
+}
+
+.starLogo {
+  color: gold;
+  font-size: 25px;
 }
