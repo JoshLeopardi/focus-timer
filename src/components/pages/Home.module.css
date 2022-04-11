@@ -21,10 +21,6 @@
   font-weight: 550;
   gap: 2px;
 }
-.circleComponent1 :hover {
-  background-color: blue;
-}
-
 .circleComponent2 {
   display: flex;
   justify-content: center;

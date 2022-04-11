@@ -4,28 +4,12 @@ import { Link } from "react-router-dom";
 import HomeOutlinedIcon from "@mui/icons-material/HomeOutlined";
 import ViewListOutlinedIcon from "@mui/icons-material/ViewListOutlined";
 import AssessmentOutlinedIcon from "@mui/icons-material/AssessmentOutlined";
-import MoreHorizOutlinedIcon from "@mui/icons-material/MoreHorizOutlined";
-import classes from "./FocusSession.module.css";
-import PauseCircleIcon from "@mui/icons-material/PauseCircle";
-import StopCircleIcon from "@mui/icons-material/StopCircle";
-
-export default function FocusSession() {
+import MoreIcon from "@mui/icons-material/More";
+export default function Settings() {
   return (
     <div>
-      <Header>Focus Session</Header>
-      <div className={classes.topSetUp}>
-        <h1>FOCUS</h1>
-        <h1>BREAK</h1>
-      </div>
-      <div className={classes.timerCountdown}>
-        <p>23:57</p>
-        <p>5:00</p>
-      </div>
-      <div className={classes.bottomcircleIcon}>
-        <PauseCircleIcon className={classes.pausecircleIcon}></PauseCircleIcon>
+      <Header>Settings</Header>
 
-        <StopCircleIcon className={classes.stopcircleIcon}></StopCircleIcon>
-      </div>
       <div className={fclasses.footer}>
         <ul>
           <Link to="/">
@@ -46,7 +30,7 @@ export default function FocusSession() {
           </Link>
           <Link to="/Settings">
             <li className={fclasses.footerbtn}>
-              <MoreHorizOutlinedIcon fontSize="large" />
+              <MoreIcon fontSize="large" />
             </li>
           </Link>
         </ul>

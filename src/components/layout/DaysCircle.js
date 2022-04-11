@@ -19,15 +19,17 @@ export default function DaysCircle() {
     <div className={classes.todaysCircles}>
       {daysOfWeek.map((values) => {
         if (values.day === today) {
-          console.log("she doesn't even go here!");
-          console.log(values);
           return (
-            <span className={classes.todaysDay}>
+            <span key={values.day} className={classes.todaysDay}>
               <Circle>{values.letter}</Circle>
             </span>
           );
         } else {
-          return <Circle>{values.letter}</Circle>;
+          return (
+            <span key={values.day}>
+              <Circle>{values.letter}</Circle>
+            </span>
+          );
         }
       })}
     </div>

@@ -1,7 +1,6 @@
 import classes from "./SetUpFocusSession.module.css";
 import TextField from "@mui/material/TextField";
 import MenuItem from "@mui/material/MenuItem";
-import { toBePartiallyChecked } from "@testing-library/jest-dom/dist/matchers";
 import React from "react";
 import fclasses from "../layout/Footer.module.css";
 import Header from "../layout/Header";
@@ -34,6 +33,7 @@ export default function SetUpFocusTimer() {
 
   const handleChange = (event) => {
     setCourse(event.target.value);
+    console.log(course);
   };
 
   return (
@@ -118,17 +118,17 @@ export default function SetUpFocusTimer() {
             </li>
           </Link>
 
-          <Link to="/customersupport">
+          <Link to="/ToDoList">
             <li className={fclasses.footerbtn}>
               <ViewListOutlinedIcon fontSize="large" />
             </li>
           </Link>
-          <Link to="/tracking">
+          <Link to="/Statistics">
             <li className={fclasses.footerbtn}>
               <AssessmentOutlinedIcon fontSize="large" />
             </li>
           </Link>
-          <Link to="/profile">
+          <Link to="/Settings">
             <li className={fclasses.footerbtn}>
               <MoreHorizOutlinedIcon fontSize="large" />
             </li>
