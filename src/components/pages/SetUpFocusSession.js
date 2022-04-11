@@ -9,6 +9,7 @@ import HomeOutlinedIcon from "@mui/icons-material/HomeOutlined";
 import ViewListOutlinedIcon from "@mui/icons-material/ViewListOutlined";
 import AssessmentOutlinedIcon from "@mui/icons-material/AssessmentOutlined";
 import MoreHorizOutlinedIcon from "@mui/icons-material/MoreHorizOutlined";
+import { useNavigate } from "react-router-dom";
 const courses = [
   {
     value: "342",
@@ -34,6 +35,11 @@ export default function SetUpFocusTimer() {
   const handleChange = (event) => {
     setCourse(event.target.value);
     console.log(course);
+  };
+
+  let navigate = useNavigate();
+  const goToFocusSession = () => {
+    navigate("/FocusSession");
   };
 
   return (
@@ -106,9 +112,9 @@ export default function SetUpFocusTimer() {
       </div>
       <div className={classes.bottomButtons}>
         <p className={classes.bottomButton}>Invite Friend</p>
-        <Link to="/FocusSession">
-          <p className={classes.bottomButton}>Start</p>
-        </Link>
+        <p onClick={goToFocusSession} className={classes.bottomButton}>
+          Start
+        </p>
       </div>
       <div className={fclasses.footer}>
         <ul>
