@@ -8,6 +8,10 @@ import MoreHorizOutlinedIcon from "@mui/icons-material/MoreHorizOutlined";
 import classes from "./FocusSession.module.css";
 import PauseCircleIcon from "@mui/icons-material/PauseCircle";
 import StopCircleIcon from "@mui/icons-material/StopCircle";
+import SparkyWalk from "../Images/Sparky_Walk.gif";
+import SparkyGrass from "../Images/Sparky_Grass.gif";
+import StarsOutlinedIcon from "@mui/icons-material/StarsOutlined";
+import EmojiEmotionsOutlinedIcon from "@mui/icons-material/EmojiEmotionsOutlined";
 
 export default function FocusSession() {
   return (
@@ -20,6 +24,30 @@ export default function FocusSession() {
       <div className={classes.timerCountdown}>
         <p>23:57</p>
         <p>5:00</p>
+      </div>
+      <div className={classes.sparkyWalk1}>
+        <img
+          className={classes.sparkyWalk2}
+          src={SparkyWalk}
+          alt="Sparky_Walk"
+        />
+      </div>
+      <div className={classes.focey}>
+        <div>
+          <EmojiEmotionsOutlinedIcon className={classes.happyFace} />
+          <StarsOutlinedIcon className={classes.starLogo} />
+        </div>
+        <div>
+          <p className={classes.happiness}>25 Happiness</p>
+          <p className={classes.points}>30000 Focey</p>
+        </div>
+      </div>
+      <div className={classes.sparkyGrass1}>
+        <img
+          className={classes.sparkyGrass2}
+          src={SparkyGrass}
+          alt="Sparky_Grass"
+        />
       </div>
       <div className={classes.bottomcircleIcon}>
         <PauseCircleIcon className={classes.pausecircleIcon}></PauseCircleIcon>

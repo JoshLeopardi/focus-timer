@@ -20,9 +20,77 @@
 }
 
 .pausecircleIcon path {
-  color: blue;
+  color: var(--primary);
 }
 
 .stopcircleIcon path {
-  color: blue;
+  color: var(--primary);
+}
+
+.sparkyWalk1 {
+  display: flex;
+  justify-content: center;
+  position: fixed;
+}
+
+.sparkyWalk2 {
+  width: 80%;
+  margin-left: -120px;
+  margin-top: 60px;
+}
+
+.sparkyGrass1 {
+  display: flex;
+  justify-content: center;
+  width: 85%;
+  border-radius: 20px;
+  margin: auto 28px;
+  z-index: -1000000;
+  overflow: hidden;
+  border: 1px solid var(--primary);
+  position: fixed;
+  margin-top: -10px;
+}
+
+.sparkyGrass2 {
+  margin: 0 0 0 0;
+  height: 340px;
+}
+
+.focey {
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  gap: 5px;
+  position: fixed;
+  margin-left: 55px;
+  margin-top: -10px;
+}
+
+.points {
+  color: white;
+  font-weight: 500;
+  font-size: 20px;
+  z-index: 1000000;
+  margin-left: -20px;
+}
+
+.starLogo {
+  color: gold;
+  font-size: 25px;
+  margin-top: 30px;
+}
+
+.happiness {
+  color: white;
+  font-weight: 500;
+  font-size: 20px;
+  z-index: 1000000;
+  margin-top: 10px;
+  margin-left: -20px;
+}
+
+.happyFace {
+  color: gold;
+  font-size: 25px;
 }
