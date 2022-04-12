@@ -6,6 +6,7 @@ export default function PieChart() {
     title: {
       text: "Weekly Study Chart",
     },
+    height: 260,
     data: [
       {
         type: "pie",
@@ -25,7 +26,7 @@ export default function PieChart() {
     ],
   };
   return (
-    <div style={{ width: "90%", margin: "auto auto" }}>
+    <div style={{ margin: "2em auto" }}>
       <CanvasJSChart
         options={options}
         /* onRef={ref => this.chart = ref} */

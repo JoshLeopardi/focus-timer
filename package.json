@@ -14,9 +14,12 @@
     "moment": "^2.29.2",
     "react": "^18.0.0",
     "react-countdown": "^2.3.2",
+    "react-beautiful-dnd": "^13.1.0",
     "react-dom": "^18.0.0",
     "react-router-dom": "^6.3.0",
     "react-scripts": "5.0.0",
+    "util": "^0.12.4",
+    "uuidv4": "^6.2.13",
     "web-vitals": "^2.1.4"
   },
   "scripts": {

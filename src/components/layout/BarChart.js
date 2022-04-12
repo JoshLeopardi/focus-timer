@@ -21,6 +21,7 @@ export default function BarChart() {
     title: {
       text: "Monthly Focus Minutes",
     },
+    height: 260,
     data: [
       {
         type: "column",
@@ -48,7 +49,7 @@ export default function BarChart() {
     ],
   };
   return (
-    <div style={{ width: "90%", margin: "auto auto" }}>
+    <div style={{ margin: "auto auto" }}>
       <CanvasJSChart
         options={options}
         /* onRef={ref => this.chart = ref} */

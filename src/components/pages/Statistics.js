@@ -12,8 +12,11 @@ export default function Statistics() {
   return (
     <div>
       <Header>Statistics</Header>
-      <PieChart className={classes.pieChart} />
-      <BarChart className={classes.barChart} />
+      <div className={classes.charts}>
+        <PieChart />
+
+        <BarChart className={classes.barChart} />
+      </div>
       <div className={fclasses.footer}>
         <ul>
           <Link to="/">
