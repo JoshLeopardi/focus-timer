@@ -5,7 +5,7 @@ import moment from "moment";
 const daysOfWeek = [
   { day: "Sunday", letter: "S" },
   { day: "Monday", letter: "M" },
-  { day: "Tueday", letter: "T" },
+  { day: "Tuesday", letter: "T" },
   { day: "Wednesday", letter: "W" },
   { day: "Thursday", letter: "T" },
   { day: "Friday", letter: "F" },
@@ -13,7 +13,6 @@ const daysOfWeek = [
 ];
 
 const today = moment().format("dddd");
-
 export default function DaysCircle() {
   return (
     <div className={classes.todaysCircles}>

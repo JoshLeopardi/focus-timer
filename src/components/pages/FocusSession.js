@@ -14,10 +14,16 @@ import StarsOutlinedIcon from "@mui/icons-material/StarsOutlined";
 import EmojiEmotionsOutlinedIcon from "@mui/icons-material/EmojiEmotionsOutlined";
 import StopCircleOutlinedIcon from "@mui/icons-material/StopCircleOutlined";
 import PauseCircleOutlineOutlinedIcon from "@mui/icons-material/PauseCircleOutlineOutlined";
+import { useState } from "react";
+import PauseButton from "../layout/PauseButton";
 
 export default function FocusSession() {
   const [pause, setPause] = useState(false);
-  const handlePause = (props) => {};
+  const handlePause = () => {
+    setPause((previousFlag) => {
+      return !previousFlag;
+    });
+  };
 
   return (
     <div>
@@ -56,9 +62,11 @@ export default function FocusSession() {
       </div>
       <div className={classes.bottomcircleIcon}>
         <PauseCircleIcon className={classes.pausecircleIcon}></PauseCircleIcon>
+        <PauseButton pause={pause} handlePause={handlePause} />
 
         <StopCircleIcon className={classes.stopcircleIcon}></StopCircleIcon>
       </div>
+
       <div className={fclasses.footer}>
         <ul>
           <Link to="/">
