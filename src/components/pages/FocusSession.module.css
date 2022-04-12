@@ -15,8 +15,17 @@
 
 .bottomcircleIcon {
   display: flex;
-  justify-content: space-evenly;
-  margin-top: 400px;
+  justify-content: center;
+  gap: 80px;
+  margin-top: 390px;
+}
+
+.pausecircleIcon {
+  font-size: 70px;
+}
+
+.stopcircleIcon {
+  font-size: 70px;
 }
 
 .pausecircleIcon path {
@@ -44,7 +53,7 @@
   justify-content: center;
   width: 85%;
   border-radius: 20px;
-  margin: auto 28px;
+  margin: auto 20px;
   z-index: -1000000;
   overflow: hidden;
   border: 1px solid var(--primary);
@@ -58,13 +67,31 @@
 }
 
 .focey {
+  /* display: flex; */
+  /* justify-content: center; */
+  /* align-items: center; */
+  /* gap: 5px; */
+  position: fixed;
+  margin-left: 65px;
+  margin-top: -20px;
+}
+
+.happySection {
   display: flex;
   justify-content: center;
-  /* align-items: center; */
-  gap: 5px;
-  position: fixed;
-  margin-left: 55px;
-  margin-top: -10px;
+  align-items: center;
+  gap: 6px;
+  margin-top: 12px;
+  margin-left: -30px;
+}
+
+.foceySection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  margin-top: -30px;
+  margin-left: -38px;
 }
 
 .points {
@@ -72,13 +99,11 @@
   font-weight: 500;
   font-size: 20px;
   z-index: 1000000;
-  margin-left: -20px;
 }
 
 .starLogo {
   color: gold;
   font-size: 25px;
-  margin-top: 30px;
 }
 
 .happiness {
@@ -86,8 +111,6 @@
   font-weight: 500;
   font-size: 20px;
   z-index: 1000000;
-  margin-top: 10px;
-  margin-left: -20px;
 }
 
 .happyFace {

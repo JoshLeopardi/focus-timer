@@ -12,8 +12,13 @@ import SparkyWalk from "../Images/Sparky_Walk.gif";
 import SparkyGrass from "../Images/Sparky_Grass.gif";
 import StarsOutlinedIcon from "@mui/icons-material/StarsOutlined";
 import EmojiEmotionsOutlinedIcon from "@mui/icons-material/EmojiEmotionsOutlined";
+import StopCircleOutlinedIcon from "@mui/icons-material/StopCircleOutlined";
+import PauseCircleOutlineOutlinedIcon from "@mui/icons-material/PauseCircleOutlineOutlined";
 
 export default function FocusSession() {
+  const [pause, setPause] = useState(false);
+  const handlePause = (props) => {};
+
   return (
     <div>
       <Header>Focus Session</Header>
@@ -33,13 +38,13 @@ export default function FocusSession() {
         />
       </div>
       <div className={classes.focey}>
-        <div>
+        <div className={classes.happySection}>
           <EmojiEmotionsOutlinedIcon className={classes.happyFace} />
-          <StarsOutlinedIcon className={classes.starLogo} />
+          <p className={classes.happiness}>+ 25 Happiness</p>
         </div>
-        <div>
-          <p className={classes.happiness}>25 Happiness</p>
-          <p className={classes.points}>30000 Focey</p>
+        <div className={classes.foceySection}>
+          <StarsOutlinedIcon className={classes.starLogo} />
+          <p className={classes.points}>+ 30000 Focey</p>
         </div>
       </div>
       <div className={classes.sparkyGrass1}>
