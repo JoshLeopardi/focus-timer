@@ -16,11 +16,20 @@ import StopCircleOutlinedIcon from "@mui/icons-material/StopCircleOutlined";
 import PauseCircleOutlineOutlinedIcon from "@mui/icons-material/PauseCircleOutlineOutlined";
 import { useState } from "react";
 import PauseButton from "../layout/PauseButton";
+import StopButton from "../layout/StopButton";
+import Countdown from "react-countdown";
 
 export default function FocusSession() {
   const [pause, setPause] = useState(false);
   const handlePause = () => {
     setPause((previousFlag) => {
+      return !previousFlag;
+    });
+  };
+
+  const [stop, setStop] = useState(false);
+  const handleStop = () => {
+    setStop((previousFlag) => {
       return !previousFlag;
     });
   };
@@ -33,8 +42,8 @@ export default function FocusSession() {
         <h1>BREAK</h1>
       </div>
       <div className={classes.timerCountdown}>
-        <p>23:57</p>
-        <p>5:00</p>
+        <Countdown date={Date.now() + 1500000} />
+        <Countdown date={Date.now() + 300000} />
       </div>
       <div className={classes.sparkyWalk1}>
         <img
@@ -61,10 +70,8 @@ export default function FocusSession() {
         />
       </div>
       <div className={classes.bottomcircleIcon}>
-        <PauseCircleIcon className={classes.pausecircleIcon}></PauseCircleIcon>
         <PauseButton pause={pause} handlePause={handlePause} />
-
-        <StopCircleIcon className={classes.stopcircleIcon}></StopCircleIcon>
+        <StopButton stop={stop} handleStop={handleStop} />
       </div>
 
       <div className={fclasses.footer}>

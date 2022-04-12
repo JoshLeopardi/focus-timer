@@ -7,12 +7,13 @@ import AssessmentIcon from "@mui/icons-material/Assessment";
 import MoreHorizOutlinedIcon from "@mui/icons-material/MoreHorizOutlined";
 import PieChart from "../layout/PieChart";
 import BarChart from "../layout/BarChart";
+import classes from "./Statistics.module.css";
 export default function Statistics() {
   return (
     <div>
       <Header>Statistics</Header>
-      <PieChart />
-      <BarChart />
+      <PieChart className={classes.pieChart} />
+      <BarChart className={classes.barChart} />
       <div className={fclasses.footer}>
         <ul>
           <Link to="/">

@@ -9,31 +9,16 @@
   width: 100%;
   margin-bottom: 15px;
   font-size: 30px;
-  margin-top: -40px;
-  margin-left: -10px;
+  margin-top: -10px;
+  margin-bottom: 50px;
 }
 
 .bottomcircleIcon {
   display: flex;
   justify-content: center;
   gap: 80px;
-  margin-top: 390px;
-}
-
-.pausecircleIcon {
-  font-size: 70px;
-}
-
-.stopcircleIcon {
-  font-size: 70px;
-}
-
-.pausecircleIcon path {
-  color: var(--primary);
-}
-
-.stopcircleIcon path {
-  color: var(--primary);
+  margin-top: 420px;
+  margin-left: -10px;
 }
 
 .sparkyWalk1 {
@@ -53,7 +38,7 @@
   justify-content: center;
   width: 85%;
   border-radius: 20px;
-  margin: auto 20px;
+  margin: auto 27px;
   z-index: -1000000;
   overflow: hidden;
   border: 1px solid var(--primary);
@@ -67,13 +52,9 @@
 }
 
 .focey {
-  /* display: flex; */
-  /* justify-content: center; */
-  /* align-items: center; */
-  /* gap: 5px; */
   position: fixed;
   margin-left: 65px;
-  margin-top: -20px;
+  margin-top: -25px;
 }
 
 .happySection {

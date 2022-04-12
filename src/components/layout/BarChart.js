@@ -48,7 +48,7 @@ export default function BarChart() {
     ],
   };
   return (
-    <div>
+    <div style={{ width: "90%", margin: "auto auto" }}>
       <CanvasJSChart
         options={options}
         /* onRef={ref => this.chart = ref} */

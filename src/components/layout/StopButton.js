@@ -1,26 +1,26 @@
 import React from "react";
 import FlagOutlined from "@mui/icons-material/FlagOutlined";
 import Flag from "@mui/icons-material/Flag";
-import PauseCircleIcon from "@mui/icons-material/PauseCircle";
-import PauseCircleOutlineOutlinedIcon from "@mui/icons-material/PauseCircleOutlineOutlined";
+import StopCircleIcon from "@mui/icons-material/StopCircle";
+import StopCircleOutlinedIcon from "@mui/icons-material/StopCircleOutlined";
 
-export default function PauseButton({ pause, handlePause }) {
+export default function StopButton({ stop, handleStop }) {
   return (
     <>
       <div className="toggle-wrapper">
-        {pause ? (
-          <PauseCircleIcon
+        {stop ? (
+          <StopCircleIcon
             className="active"
             fontSize="large"
             sx={{ color: "#004fc5", fontSize: "70px" }}
-            onClick={() => handlePause()}
+            onClick={() => handleStop()}
           />
         ) : (
-          <PauseCircleOutlineOutlinedIcon
+          <StopCircleOutlinedIcon
             className="inactive"
             fontSize="large"
             sx={{ color: "#004fc5", fontSize: "70px" }}
-            onClick={() => handlePause()}
+            onClick={() => handleStop()}
           />
         )}
       </div>
