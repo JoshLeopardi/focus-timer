@@ -6,14 +6,10 @@ import ViewListOutlinedIcon from "@mui/icons-material/ViewListOutlined";
 import AssessmentOutlinedIcon from "@mui/icons-material/AssessmentOutlined";
 import MoreHorizOutlinedIcon from "@mui/icons-material/MoreHorizOutlined";
 import classes from "./FocusSession.module.css";
-import PauseCircleIcon from "@mui/icons-material/PauseCircle";
-import StopCircleIcon from "@mui/icons-material/StopCircle";
 import SparkyWalk from "../Images/Sparky_Walk.gif";
 import SparkyGrass from "../Images/Sparky_Grass.gif";
 import StarsOutlinedIcon from "@mui/icons-material/StarsOutlined";
 import EmojiEmotionsOutlinedIcon from "@mui/icons-material/EmojiEmotionsOutlined";
-import StopCircleOutlinedIcon from "@mui/icons-material/StopCircleOutlined";
-import PauseCircleOutlineOutlinedIcon from "@mui/icons-material/PauseCircleOutlineOutlined";
 import { useState } from "react";
 import PauseButton from "../layout/PauseButton";
 import StopButton from "../layout/StopButton";
@@ -28,7 +24,9 @@ export default function FocusSession() {
   };
 
   const [stop, setStop] = useState(false);
+  const [actStop, setActStop] = useState(false);
   const handleStop = () => {
+    setActStop(true);
     setStop((previousFlag) => {
       return !previousFlag;
     });
@@ -43,7 +41,7 @@ export default function FocusSession() {
       </div>
       <div className={classes.timerCountdown}>
         <Countdown date={Date.now() + 1500000} />
-        <Countdown date={Date.now() + 300000} />
+        <Countdown date={Date.now() + 300000} autoStart={actStop} />
       </div>
       <div className={classes.sparkyWalk1}>
         <img

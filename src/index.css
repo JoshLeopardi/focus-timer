@@ -1,7 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Mulish&display=swap%27");
 :root {
   --primary: #004fc5;
-  --secondary: #e1e8eb;
+  --secondary: #fcfcfc;
+  --tertiary: #e20000;
 }
 body {
   margin: 0;

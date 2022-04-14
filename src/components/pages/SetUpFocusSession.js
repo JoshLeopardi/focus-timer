@@ -68,15 +68,14 @@ export default function SetUpFocusTimer() {
           <i>
             Try studying with the{" "}
             <span style={{ color: "#004fc5", fontWeight: "bold" }}>
-              {" "}
               Pomodoro Technqiue
             </span>
             .
           </i>
-          <br /> Set the Focus Timer to{" "}
-          <span style={{ color: "#004fc5", fontWeight: "bold" }}>25 </span>{" "}
-          Minutes. <br /> Set the Break Timer to{" "}
-          <span style={{ color: "#004fc5", fontWeight: "bold" }}> 5 </span>
+          <br /> Set the Focus Timer to
+          <span style={{ color: "#e20000", fontWeight: "bold" }}> 25 </span>
+          Minutes. <br /> Set the Break Timer to
+          <span style={{ color: "#e20000", fontWeight: "bold" }}> 5 </span>
           Minutes. <br /> Repeat!
         </p>
       </div>
@@ -110,7 +109,7 @@ export default function SetUpFocusTimer() {
         <h3 style={{ marginBottom: "-10px" }}>Study With Friends</h3>
         <h3
           style={{
-            color: "#004fc5",
+            color: "#e20000",
             fontWeight: "bold",
             marginBottom: "22px",
           }}

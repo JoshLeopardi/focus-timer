@@ -5,19 +5,32 @@ import HomeOutlinedIcon from "@mui/icons-material/HomeOutlined";
 import ViewListOutlinedIcon from "@mui/icons-material/ViewListOutlined";
 import AssessmentOutlinedIcon from "@mui/icons-material/AssessmentOutlined";
 import MoreIcon from "@mui/icons-material/More";
-import { useState } from "react";
-export default function Settings() {
-  const [pause, setPause] = useState(false);
+// import Switch from "react-switch";
+// import { useState } from "react";
+import pikachu from "../Images/pikachu.gif";
 
-  const handlePause = () => {
-    if (pause == false) {
-      setPause(true);
-    } else setPause(false);
-  };
+export default function Settings() {
+  // const [checked, setChecked] = useState(false);
+  // const handleChange = (nextChecked) => {
+  //   setChecked(nextChecked);
+  // };
   return (
     <div>
       <Header>Settings</Header>
-
+      {/* <Switch
+        onChange={handleChange}
+        checked={checked}
+        className="react-switch"
+      /> */}
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          marginTop: "200px",
+        }}
+      >
+        <img src={pikachu} alt="Under Construction" style={{ width: "80%" }} />
+      </div>
       <div className={fclasses.footer}>
         <ul>
           <Link to="/">
@@ -25,7 +38,6 @@ export default function Settings() {
               <HomeOutlinedIcon fontSize="large" />
             </li>
           </Link>
-
           <Link to="/ToDoList">
             <li className={fclasses.footerbtn}>
               <ViewListOutlinedIcon fontSize="large" />
