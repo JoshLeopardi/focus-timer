@@ -1,7 +1,7 @@
 # SOEN357 Project - Focus Timer
 
 
-## Team Members
+## Programmers
 
 | Name                 | Student ID | GitHub Name      |
 | -------------------- | ---------- | ---------------- |
