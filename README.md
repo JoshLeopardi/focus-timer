@@ -8,6 +8,14 @@
 | Allan Paul Lopez     | 40000954   | [allanation](https://github.com/allanation)       | 
 | Joshua Leopardi      | 40121787   | [JoshLeopardi](https://github.com/JoshLeopardi)   |
 
+## UI/UX Designers
+
+| Name                 | Student ID | GitHub Name      |
+| -------------------- | ---------- | ---------------- |
+| Allan Paul Lopez     | 40000954   | [allanation](https://github.com/allanation)       | 
+| Joshua Leopardi      | 40121787   | [JoshLeopardi](https://github.com/JoshLeopardi)   |
+| Quynh-An Tran        | 40158556   | [mapleminou](https://github.com/mapleminou)       |
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
