@@ -15,7 +15,8 @@
 | Allan Paul Lopez     | 40000954   | [allanation](https://github.com/allanation)       | 
 | Joshua Leopardi      | 40121787   | [JoshLeopardi](https://github.com/JoshLeopardi)   |
 | Quynh-An Tran        | 40158556   | [mapleminou](https://github.com/mapleminou)       |
-
+| Andrei Serban        | 40078569   | [RegeleViteaz](https://github.com/RegeleViteaz)   |
+  
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
